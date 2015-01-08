@@ -1,6 +1,7 @@
 
 body{
   margin:0;
+  min-width:1332px;
 }
 header{
   position: relative;
@@ -134,7 +135,7 @@ blockquote{
 }
 aside{
   width:35%;
-  height:40em;
+
   text-align:center;
   font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
@@ -186,6 +187,48 @@ aside p{
   text-decoration:none;
   border-top: silver solid 1px;
   margin-top:1em;
+}
+.bottom_pics{
+  position:relative;
+  float:left;
+  width:24.85%;
+  height:20em;
+  background-size:353px 320px;
+  background-repeat:no-repeat;
+
+}
+#box_one{
+  background-image:url(../FILES/surfboard.jpg);
+}
+#box_two{
+  background-image:url(../FILES/beer.jpg);
+}
+#box_three{
+  background-image:url(../FILES/zach.png);
+}
+#box_four{
+  background-image:url(../FILES/bottles.jpg);
+}
+#box_one>div.tint, #box_two>div.tint, #box_four>div.tint{
+  text-align:left;
+  padding:17em 1em 1em 1em;
+}
+div.bottom_pics>div.tint:hover{
+  background-color:rgba(255, 255, 255, 0);
+  color:white;
+}
+div.bottom_pics>div.tint>a{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-decoration:none;
+  color:rgba(37,36,40,0.88);
+  font-size:1.8em;
+  text-align:left;
+  vertical-align:bottom;
+  font-weight:bold;
+}
+#box_three>div.tint{
+  text-align:left;
+  padding:15em 1em 1em 1em;
 }
 footer{
   width:100%;

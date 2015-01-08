@@ -1,6 +1,4 @@
-*{
-  border:1px solid orange;
-}
+
 body{
   margin:0;
 }
@@ -37,18 +35,18 @@ nav a{
   color:rgba(37,36,40,0.68);
   text-decoration:none;
 }
-a:nth-child(2){
+nav a:nth-child(2){
   left:.7em;
 }
-a:nth-child(3){
+nav a:nth-child(3){
   left:42em;
   font-weight:bold;
 }
-a:nth-child(4){
+nav a:nth-child(4){
   left:43em;
   font-weight:bold;
 }
-a:nth-child(5){
+nav a:nth-child(5){
   position:relative;
   left:42.7em;
   bottom:.7em;
@@ -90,16 +88,16 @@ section>h1{
 }
 #left_author_photo{
   width:30px;
-  margin-bottom:2em;
+  margin-bottom:1em;
 }
 section span.aqua{
   position:relative;
   margin-right:1em;
-  bottom:2.6em;
+  bottom:1.6em;
 }
 section span.silver{
   position:relative;
-  bottom:2.6em;
+  bottom:1.6em;
 }
 section>p{
   font-size:1.1em
@@ -117,15 +115,16 @@ blockquote{
 .aqua{
   color:#006699;
 }
-#utility_button_wrapper{
-
+#utility_button_wrapper>img{
+  position:relative;
+  top:0.6em;
 }
 .silver_button, .blue_button{
   color:white;
   display:inline-block;
   text-decoration:none;
-  position:relative;
-  padding: .3em 0;
+  margin-right:0.3em;
+  padding: 0.35em 0.7em;
 }
 .silver_button{
   background-color:silver;
@@ -136,6 +135,57 @@ blockquote{
 aside{
   width:35%;
   height:40em;
+  text-align:center;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+#right_author_photo{
+  margin-top:6em;
+}
+aside span.aqua{
+  font-size:1.15em;
+}
+#social_one, #social_two{
+  border-right: 1px solid silver;
+}
+.social_buttons{
+  color:silver;
+  text-decoration:none;
+  font-size:0.9em;
+  padding: 0 0.4em;
+}
+#surfer_girl{
+  margin-top:3.7em;
+  display:inline-block;
+}
+aside>a.silver{
+  display:block;
+  text-align:right;
+  padding-right:7em;
+  padding-top:0.5em;
+}
+aside h2{
+  color:#0066CC;
+  margin-bottom:0;
+}
+aside p{
+  width:300px;
+  text-align:left;
+  padding-left:6em;
+  margin-top:0.5em;
+}
+#most_popular_posts{
+  display:block;
+  float:left;
+  color:#073470;
+  font-size:3.5em;
+  width:100%;
+  text-align:center;
+  padding:0.6em 0;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-weight:bold;
+  text-decoration:none;
+  border-top: silver solid 1px;
+  margin-top:1em;
 }
 footer{
   width:100%;

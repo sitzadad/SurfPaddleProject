@@ -124,12 +124,31 @@ blockquote{
   position:relative;
   top:0.6em;
 }
+.individual_button_wrapper_1{
+  display:inline-block;
+  background-color:#60686F;
+}
+.individual_button_wrapper_2{
+  display:inline-block;
+  background-color:#60686F;
+  margin-left:0.5em;
+}
+.individual_button_wrapper_3{
+  display:inline-block;
+  background-color:#153650;
+  margin-left:0.5em;
+}
 .silver_button, .blue_button{
   color:white;
   display:inline-block;
   text-decoration:none;
-  margin-right:0.3em;
   padding: 0.35em 0.7em;
+}
+/* imported icons from fort awesome */
+.fa.fa-comment,.fa.fa-cloud-upload,.fa.fa-share-square{
+   color:white;
+  padding-left:0.5em;
+  padding-right:0.1em;
 }
 .silver_button{
   background-color:silver;
@@ -237,28 +256,6 @@ color:white;
 #box_four{
   background-image:url(../FILES/bottles.jpg);
 }
-/*
-#box_one>div.tint, #box_two>div.tint, #box_four>div.tint{
-  text-align:left;
-  padding:16em 1em 1em 1em;
-}
-div.bottom_pics>div.tint:hover{
-  background-color:rgba(255, 255, 255, 0);
-  color:white;
-}
-div.bottom_pics>div.tint>a:hover{
-  color:white;
-}
-div.bottom_pics>div.tint>a{
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
-  text-decoration:none;
-  color:rgba(37,36,40,0.88);
-  font-size:1.8em;
-  text-align:left;
-  vertical-align:bottom;
-  font-weight:bold;
-}*/
-
 footer{
   width:100%;
   /* vertical-align:middle; */
@@ -273,17 +270,6 @@ footer img{
   padding-left:10em;
   padding-right:1em;
 }
-/* footer img{
-  float:left;
-padding-top:1em;
-padding-left:16em;
-}*/
-/* footer span{
-  position:relative;
-  top:2em;
-  padding-left:1em;
-  color: #A4B4BF;
-} */
 footer ul{
   display:inline-block;
   margin:0;
@@ -301,6 +287,9 @@ footer ul li:nth-child(2),footer ul li:nth-child(3),footer ul li:nth-child(4){
   border-right: 1px solid #A4B4BF;
   padding-left:0.5em;
   padding-right:0.5em;
+}
+footer ul li:nth-child(5){
+  padding-left:0.5em;
 }
 footer ul li:nth-child(2){
   margin-left:15em;

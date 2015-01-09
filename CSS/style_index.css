@@ -1,4 +1,6 @@
-
+/* *{
+  border:1px solid red;
+} */
 body{
   margin:0;
   min-width:1332px;
@@ -12,6 +14,7 @@ header>img{
   position:relative;
 }
 .tint{
+  display:block;
   position:absolute;
   left:0;
   right:0;
@@ -20,7 +23,7 @@ header>img{
   background-color:rgba(31, 103, 181, 0.7);
   text-align:center;
 }
-nav{
+header nav{
   text-align:left;
   padding-top:.5em;
   padding-left:10em;
@@ -29,33 +32,34 @@ nav{
   vertical-align:middle;
   height:58px;
 }
-nav a{
+header nav a{
   position:relative;
   display:inline-block;
   bottom:1em;
   color:rgba(37,36,40,0.68);
   text-decoration:none;
 }
-nav a:nth-child(2){
+i{
+  color:rgba(37,36,40,0.68);
+}
+header nav a:nth-child(2){
   left:.7em;
 }
-nav a:nth-child(3){
+header nav a:nth-child(3){
   left:42em;
   font-weight:bold;
 }
-nav a:nth-child(4){
+header nav a:nth-child(4){
   left:43em;
   font-weight:bold;
 }
-nav a:nth-child(5){
+header nav a:nth-child(5){
   position:relative;
   left:42.7em;
   bottom:.7em;
 }
 #title_wrapper{
   margin-top:11em;
-
-
 }
 #title{
   font-size:6.5em;
@@ -107,7 +111,7 @@ section>p{
   color:silver;
 }
 blockquote{
-  color:#0066CC;
+  color:#1A69B0;
   border-left:2px solid grey;
   font-size:2em;
   padding-left:1em;
@@ -131,7 +135,7 @@ blockquote{
   background-color:silver;
 }
 .blue_button{
-  background-color:#0066CC;
+  background-color:#1A69B0;
 }
 aside{
   width:35%;
@@ -165,7 +169,7 @@ aside>a.silver{
   padding-top:0.5em;
 }
 aside h2{
-  color:#0066CC;
+  color:#1A69B0;
   margin-bottom:0;
 }
 aside p{
@@ -193,9 +197,33 @@ aside p{
   float:left;
   width:24.85%;
   height:20em;
-  background-size:353px 320px;
   background-repeat:no-repeat;
-
+}
+.bottom_pics>a{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-decoration:none;
+  color:rgba(37,36,40,0.88);
+  font-size:1.8em;
+  text-align:left;
+  font-weight:bold;
+}
+#box_one>a,#box_two>a,#box_four>a{
+  padding:9.5em 0 0 0.5em;
+}
+/* Box three's content is two lines */
+#box_three>a{
+  padding:8.4em 0 0 0.5em;
+}
+.bottom_pics>a:hover{
+background-color:rgba(255, 255, 255, 0);
+color:white;
+}
+#box_one,#box_two,#box_four{
+  /*   first dimension is width, second is height */
+  background-size:auto 100%;
+}
+#box_three{
+  background-size:100% auto;
 }
 #box_one{
   background-image:url(../FILES/surfboard.jpg);
@@ -209,12 +237,16 @@ aside p{
 #box_four{
   background-image:url(../FILES/bottles.jpg);
 }
+/*
 #box_one>div.tint, #box_two>div.tint, #box_four>div.tint{
   text-align:left;
   padding:16em 1em 1em 1em;
 }
 div.bottom_pics>div.tint:hover{
   background-color:rgba(255, 255, 255, 0);
+  color:white;
+}
+div.bottom_pics>div.tint>a:hover{
   color:white;
 }
 div.bottom_pics>div.tint>a{
@@ -225,36 +257,56 @@ div.bottom_pics>div.tint>a{
   text-align:left;
   vertical-align:bottom;
   font-weight:bold;
-}
-#box_three>div.tint{
-  text-align:left;
-  padding:14em 1em 1em 1em;
-}
+}*/
+
 footer{
   width:100%;
-  height:5em;
+  /* vertical-align:middle; */
   float:left;
   background-color:#093755;
-  vertical-align:middle;
 
-
-}
-footer span{
-  position:relative;
-  top:2em;
-  padding-left:1em;
-  color: white;
-
-}
-#footer_wrapper{
-
-}
-footer a{
-  color:white;
-  text-decoration:none;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
 }
 footer img{
   float:left;
-  padding-top:1em;
-  padding-left:16em;
+  padding-left:10em;
+  padding-right:1em;
+}
+/* footer img{
+  float:left;
+padding-top:1em;
+padding-left:16em;
+}*/
+/* footer span{
+  position:relative;
+  top:2em;
+  padding-left:1em;
+  color: #A4B4BF;
+} */
+footer ul{
+  display:inline-block;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  color:#A4B4BF;
+}
+footer li{
+  display:inline-block;
+  margin-top:0.8em;
+  margin-bottom:0.2em;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+footer ul li:nth-child(2),footer ul li:nth-child(3),footer ul li:nth-child(4){
+  border-right: 1px solid #A4B4BF;
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+footer ul li:nth-child(2){
+  margin-left:15em;
+}
+footer a{
+  color:#A4B4BF;
+  text-decoration:none;
+
 }
